@@ -161,7 +161,7 @@ alert( `👏Excelente👏, llegaste al final 🥇🥇🥇
              Edad: ${edad}
              Nacionalidad: ${pais} 
              Pregunta Respondida: ${pregunta1}
-             Numero primo consultado: ${numeroIngresado}
+             Numero consultado ("Primo o No primo"): ${numeroIngresado}
              El numero consultado Par o Impar fue: ${numeroIngresado1}`);
 
 
