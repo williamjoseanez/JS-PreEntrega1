@@ -53,23 +53,23 @@ let apellido = prompt( `Introducir su Apellido 📝:` ).toLowerCase();
               alert(` ✅ Edad ingresada correctamente , puede continuar 🔜`);
               };
             
-let pais = prompt(`✏  Ingrese su País de Nacimiento 🇦🇵🚩... 
+let país = prompt(`✏  Ingrese su País de Nacimiento 🇦🇵🚩... 
                    ⚠️ Nuestra base de datos esta basada en países Sudamericanos`).toLowerCase();
 
-        switch (pais) {
-          case "argentina":
+        switch (país) {
+          case "Argentina":
                 alert(`Su país de nacimiento es Argentina 🇷.`);
           break;
 
-          case "chile":
+          case "Chile":
                 alert(`Su país de nacimiento es Chile 🏴󠁵󠁳󠁴󠁸󠁿.`);
           break;
 
-          case "colombia":
+          case "Colombia":
                 alert(`Su país de nacimiento es Colombia 🇨🇴.`);
           break;
 
-          case "venezuela":
+          case "Venezuela":
                 alert(`Su país de nacimiento es Venezuela 🇻🇪.`);
           break;
 
@@ -77,21 +77,21 @@ let pais = prompt(`✏  Ingrese su País de Nacimiento 🇦🇵🚩...
                 alert(`Su país de nacimiento es Peru 🇪.`);
           break;
 
-          case "brasil":
+          case "Brasil":
                 alert(`Su país de nacimiento es Brasil 🇧🇷.`);
           break;
 
-          case "uruguay":
+          case "Uruguay":
                 alert(`Su país de nacimiento es Uruguay 🇾🇺🇾.`);
           break;
               
-          case "ecuador":
+          case "Ecuador":
                 alert(`Su país de nacimiento es Ecuador.`);
           break;
 
           default:
                 alert(`❌ Su país de nacimiento no esta en nuestra base de datos.`)
-                pais = prompt(`Ingrese su País de Nacimiento 🇦🇵🚩`);  
+                país = prompt(`Ingrese su País de Nacimiento 🇦🇵🚩`);  
              };
 
 alert( `🥳 Genial 👏.
@@ -159,7 +159,7 @@ alert( `👏Excelente👏, llegaste al final 🥇🥇🥇
 
              Nombre 👑: ${ nombre } ${ apellido }
              Edad: ${edad}
-             Nacionalidad: ${pais} 
+             Nacionalidad: ${país} 
              Pregunta Respondida: ${pregunta1}
              Numero consultado ("Primo o No primo"): ${numeroIngresado}
              El numero consultado Par o Impar fue: ${numeroIngresado1}`);
