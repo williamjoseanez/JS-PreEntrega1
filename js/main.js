@@ -1,9 +1,9 @@
 alert( `
-        Hola 😎! Bienvenido al curso de JavaScript®️.
+        Hola 😎‼️ Bienvenido al curso de JavaScript®️.
 
         Mi nombre es William Añez. 🤓
 
-        Entraste a mi Primer-proyecto básico de JS 👨🏻‍💻.
+        Entraste a mi primer proyecto básico de JS 👨🏻‍💻.
 
         Para avanzar debe contestar todas las preguntas 🔜.`);
 
@@ -46,7 +46,7 @@ let apellido = prompt( `Introducir su Apellido 📝:` ).toLowerCase();
  let edad = pedirNumero();
               
         if (edad >= 0 && edad < 18) {
-              alert(` ❌ Para continuar debe ser mayor de edad`);
+              alert(` ❌ Para continuar debe ser mayor de edad ⚠️`);
               edad = parseInt(prompt(`Ingrese su Edad`));
                 }
         else {
