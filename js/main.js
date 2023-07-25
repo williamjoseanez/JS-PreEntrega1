@@ -37,58 +37,58 @@ let apellido = prompt( `Introducir su Apellido 📝:` ).toLowerCase();
   function pedirNumero(){
         let input = prompt("Ingrese su Edad 🙂:");
               
-              while (isNaN(input) || input.trim() === "") {
+        while (isNaN(input) || input.trim() === "") {
               input = prompt("❌ Debe Ingresar una edad Valida");
               }
             }
               
  let edad = pedirNumero();
               
-              if (edad != '' && edad >= 0 && edad < 18) {
-                  alert(` ❌ Debe Ingresar una edad Valida`)
-                  edad = parseInt(prompt(`Ingrese su Edad`));
-            }
-                else {
+        if (edad != '' && edad >= 0 && edad < 18) {
+              alert(` ❌ Debe Ingresar una edad Valida`)
+              edad = parseInt(prompt(`Ingrese su Edad`));
+                }
+        else {
               alert(` ✅ Edad ingresada correctamente , puede continuar 🔜`);
               };
             
 let pais = prompt(`✏  Ingrese su País de Nacimiento 🇦🇵🚩... 
                    ⚠️ Nuestra base de datos esta basada en países Sudamericanos`).toLowerCase();
 
-              switch (pais) {
-              case "argentina":
-                  alert(`Su país de nacimiento es Argentina 🇷.`);
-              break;
+        switch (pais) {
+          case "argentina":
+                alert(`Su país de nacimiento es Argentina 🇷.`);
+          break;
 
-              case "chile":
+          case "chile":
                 alert(`Su país de nacimiento es Chile 🏴󠁵󠁳󠁴󠁸󠁿.`);
-              break;
+          break;
 
-              case "colombia":
+          case "colombia":
                 alert(`Su país de nacimiento es Colombia 🇨🇴.`);
-              break;
+          break;
 
-              case "venezuela":
+          case "venezuela":
                 alert(`Su país de nacimiento es Venezuela 🇻🇪.`);
-              break;
+          break;
 
-              case "Peru":
+          case "Peru":
                 alert(`Su país de nacimiento es Peru 🇪.`);
-              break;
+          break;
 
-              case "brasil":
+          case "brasil":
                 alert(`Su país de nacimiento es Brasil 🇧🇷.`);
-              break;
+          break;
 
-              case "uruguay":
+          case "uruguay":
                 alert(`Su país de nacimiento es Uruguay 🇾🇺🇾.`);
-              break;
+          break;
               
-              case "ecuador":
+          case "ecuador":
                 alert(`Su país de nacimiento es Ecuador.`);
-              break;
+          break;
 
-              default:
+          default:
                 alert(`❌ Su país de nacimiento no esta en nuestra base de datos.`)
                 pais = prompt(`Ingrese su País de Nacimiento 🇦🇵🚩`);  
              };
@@ -103,25 +103,25 @@ alert( `🥳 Genial 👏.
 
 let pregunta1 = prompt("La suma de dos numero Impares tiene como resultado un numero Par?, Responda Verdadero o Falso");
 
-              if (pregunta1 === "verdadero" ){
+          if (pregunta1 === "verdadero" ){
                   alert(`Excelente 👏, vamos a la siguiente pregunta`);
-              } 
-              else {
+                  } 
+          else {
                   alert(` ❌ Lo siento, vuelva a intentarlo ❌`);
                   pregunta1 = prompt(`La suma de dos numero Impares tiene como resultado un numero Par?, Responda Verdad o Falso`);
               };
 
-alert( ` Felicitaciones 🥳🥳🥳.
+      alert( ` Felicitaciones 🥳🥳🥳.
 
-         Vamos avanzando muy bien 👏👏, ahora comprobaremos si un numero es PRIMO o NO`);
+                Vamos avanzando muy bien 👏👏, ahora comprobaremos si un numero es PRIMO o NO`);
 
 function esPrimo(numeroPrimo) {
           if (numeroPrimo <= 1) {
-            return false;
+              return false;
           }
           
           for (let i = 2; i <= Math.sqrt(numeroPrimo); i++) {
-            if (numeroPrimo % i === 0) {
+          if (numeroPrimo % i === 0) {
               return false;
             }
           }
@@ -157,7 +157,7 @@ alert( `👏Excelente👏, llegaste al final 🥇🥇🥇
              Te muestro tus datos ingresados:
 
              Nombre 👑: ${ nombre } ${ apellido }
-             Edad: ${ edad }
+             Edad: ${ pedirNumero }
              Nacionalidad: ${pais} 
              Pregunta Respondida: ${pregunta1}
              Numero primo consultado: ${numeroIngresado}
