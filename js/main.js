@@ -46,7 +46,7 @@ let apellido = prompt( `Introducir su Apellido 📝:` ).toLowerCase();
  let edad = pedirNumero();
               
         if (edad >= 0 && edad < 18) {
-              alert(` ❌ Debe Ingresar una edad Valida`);
+              alert(` ❌ Para continuar debe ser mayor de edad`);
               edad = parseInt(prompt(`Ingrese su Edad`));
                 }
         else {
