@@ -37,15 +37,16 @@ let apellido = prompt( `Introducir su Apellido 📝:` ).toLowerCase();
   function pedirNumero(){
         let input = prompt("Ingrese su Edad 🙂:");
               
-        while (isNaN(input) || input.trim() === "") {
+        while (isNaN(input) || input.trim() === "" ) {
               input = prompt("❌ Debe Ingresar una edad Valida");
               }
+              return parseFloat(input);
             }
               
  let edad = pedirNumero();
               
-        if (edad != '' && edad >= 0 && edad < 18) {
-              alert(` ❌ Debe Ingresar una edad Valida`)
+        if (edad >= 0 && edad < 18) {
+              alert(` ❌ Debe Ingresar una edad Valida`);
               edad = parseInt(prompt(`Ingrese su Edad`));
                 }
         else {
@@ -157,7 +158,7 @@ alert( `👏Excelente👏, llegaste al final 🥇🥇🥇
              Te muestro tus datos ingresados:
 
              Nombre 👑: ${ nombre } ${ apellido }
-             Edad: ${ pedirNumero }
+             Edad: ${edad}
              Nacionalidad: ${pais} 
              Pregunta Respondida: ${pregunta1}
              Numero primo consultado: ${numeroIngresado}
