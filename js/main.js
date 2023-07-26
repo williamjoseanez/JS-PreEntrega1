@@ -154,27 +154,20 @@ function esPar(numeroPar) {
           alert(`👏👏El numero ` + numeroIngresado1 + " es un número IMPAR.");
         };
 
-alert( `👏Excelente👏, llegaste al final 🥇🥇🥇
-             Te muestro tus datos ingresados:
 
-             Nombre 👑: ${ nombre } ${ apellido }
-             Edad: ${edad}
-             Nacionalidad: ${país} 
-             Pregunta Respondida: ${pregunta1}
-             Numero consultado ("Primo o No primo"): ${numeroIngresado}
-             El numero consultado Par o Impar fue: ${numeroIngresado1}
-             
-             Ahora avanzamos al proximo nivel `);
 alert (`En esta sección simularemos una tienda de compras, donde tu calcularías cuanto te quedaría el precio final`);
     
-alert (`ha entrado un producto único en su estilo, el Valor del producto es de $500 Ars ¿Está interesado?, de ser asi en la proxima ventana elija la cantidad de productos que desea agregar al carrito`);
+alert (`Vendemos un producto 🍔 , el Valor del producto es de $500 + iva, en la proxima ventana elija la cantidad de productos que desea agregar al carrito 🛒`);
         
         
         let cantidadArticulo = parseInt(prompt(`¿Cuántos artículos deseas agregar ✍🏻`));{
-                  if (cantidadArticulo >= 1 && cantidadArticulo < 13);
-                  alert(`Ha agregado correctamente  ` + cantidadArticulo + ` artículos al carrito 🛒 `);
-                  } 
-
+                  if (cantidadArticulo >= 1 && cantidadArticulo < 13){
+                  alert(`Ha agregado correctamente  ` + cantidadArticulo + ` artículos al carrito 🛒 `)
+                  } else {
+                        alert(`❌Mínimo debe elegir un producto, un máximo de 12 unidades❌`)
+                        cantidadArticulo = parseInt(prompt(`¿Cuántos artículos deseas agregar ✍🏻`))
+                  }
+            }
         const suma = (a, b) => a + b;
         const resta = (a, b) => a - b;
         const iva = (x) => x * 0.21;
@@ -222,8 +215,24 @@ alert (`ha entrado un producto único en su estilo, el Valor del producto es de 
         };
 
        
-  let montofinal = suma(totalApagar,montoConPorcentaje);{
-      alert("Estamos a un paso de de finalizar la compra 💰, el monto total a pagar es :$" + Math.round(montofinal) + " Gracias por su Compra!");
-  }
+  let montoFinal = suma(totalApagar,montoConPorcentaje);{
+      alert("Estamos a un paso de finalizar esta compra 💰, el monto total a pagar es :$" + Math.round(montoFinal) + " Gracias por su Compra!");
+  };
+
+  alert( `👏Excelente👏, llegaste al final 🥇🥇🥇
+             Te muestro tus datos ingresados:
+
+             Nombre 👑: ${ nombre } ${ apellido }
+             Edad: ${edad}
+             Nacionalidad: ${país} 
+             Pregunta Respondida: ${pregunta1}
+             Numero consultado ("Primo o No primo"): ${numeroIngresado}
+             El numero consultado Par o Impar fue: ${numeroIngresado1}
+             El numero consultado Par o Impar fue: ${numeroIngresado1}
+             Has comprado : ${cantidadArticulo} artículos
+             El monto Donado : $ ${montoConPorcentaje}
+             Tu pago Total :$ ${montoFinal}
+
+             Gracias por visitar mi pagina `);
 
       
