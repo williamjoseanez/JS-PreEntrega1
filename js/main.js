@@ -165,58 +165,65 @@ alert( `👏Excelente👏, llegaste al final 🥇🥇🥇
              El numero consultado Par o Impar fue: ${numeroIngresado1}
              
              Ahora avanzamos al proximo nivel `);
-        alert (`En esta sección simularemos una tienda de compras, donde tu calcularías cuanto te quedaría el precio final`);
+alert (`En esta sección simularemos una tienda de compras, donde tu calcularías cuanto te quedaría el precio final`);
     
-        alert (`ha entrado un producto único en su estilo, el Valor del producto es de $500 Ars ¿Está interesado?, de ser asi en la proxima ventana elija la cantidad de productos que desea agregar al carrito`);
+alert (`ha entrado un producto único en su estilo, el Valor del producto es de $500 Ars ¿Está interesado?, de ser asi en la proxima ventana elija la cantidad de productos que desea agregar al carrito`);
         
         
         let cantidadArticulo = parseInt(prompt(`¿Cuántos artículos deseas agregar`));{
-                  if (cantidadArticulo >= 1 && cantidadArticulo < 10);
+                  if (cantidadArticulo >= 1 && cantidadArticulo < 13);
                   alert(`Ha agregado correctamente  ` + cantidadArticulo + ` artículos al carrito `);
-                } 
+                  } 
 
         const suma = (a, b) => a + b;
         const resta = (a, b) => a - b;
         const iva = (x) => x * 0.21;
         const multiplica = (a,b) => a * b;
-        const porcentajeDescuento = (x) => (((x*a)/100)-x);
-        
-        
-        let valorProducto = 500;
-        let descuento = 50;
-        
+        const porcentajeDescuento = (x) => x / 100;
+              
+    let valorProducto = 500;
+                
         //CÁLCULO DEL PRECIO FINAL
                   // valorProducto * iva = precioFinalProducto
                   // precioFinalProducto * cantidadArticulo = montoCompra
                   // montoCompra - porcentajeDescuento = totalApagar
     let totalApagar = multiplica(suma(valorProducto,iva(valorProducto)),cantidadArticulo);{
-          alert("El Total Apagará $" + Math.round(totalApagar));
-        };
+          alert("El Total Apagará $ " + Math.round(totalApagar));
+            };
 
-          alert(`Hoy estamos recolectando un aporte especial para los niños de la calle, dime que porcentaje te gustaría donar en la siguiente ventana ingresa en números`);
+          alert(`Pedimos una donación especial para los niños de la calle, agrega porcentaje en la siguiente ventana`);
 
     
     
     function pedirDonacion(){
-      let donacion = prompt(`ingrese por favor el porcentaje a donar, el mismo se calcula en base a su total a pagar en la tienda`);
+      let donacion = prompt(`Ingrese por favor el porcentaje:
+      5,10,15 o el monto que usted considere`);
                                 
               while (isNaN(donacion) || donacion.trim() === "" ) {
-                    donación = prompt("❌ Debe Ingresar un porcentaje Valido");
+                    donacion = prompt("❌ Debe Ingresar un porcentaje Valido");
                     }
                     return parseFloat(donacion);
                   };
                     
-//        let porcentaje = pedirDonacion();
+       let porcentaje = pedirDonacion();{
                     
-//               if (porcentaje < 0) {
-//                     alert(` ❌ Para continuar debe ingresar un porcentaje ⚠️`);
-//                     porcentaje = parseInt(prompt(`❌ Debe Ingresar un porcentaje Valido`));
-//                       }
-                    
-//         alert("✅ Gracias! ha decidido donar el"  + ${porcentaje} +"% sobre el monto total de su factura 🔜");
-                
+              if (porcentaje < 0) {
+                    alert(` ❌ Para continuar debe ingresar un porcentaje ⚠️`);
+                    porcentaje = parseInt(prompt(`❌ Debe Ingresar un porcentaje Valido`));
+                      }
+                  }
+         
+        alert("✅ Gracias! ha decidido donar el " + Math.round(porcentaje) + "% del monto de su factura a una buena causa");
+      
 
 
-    
+  let montoConPorcentaje = porcentajeDescuento(multiplica(totalApagar,porcentaje));{
+      alert("Usted esta agregando $" + Math.round(montoConPorcentaje) + " a su monto total");
+        };
+
        
+  let montofinal = suma(totalApagar,montoConPorcentaje);{
+      alert("Estamos a un paso de de finalizar la compra, el monto total a pagar es : $" + Math.round(montofinal) + " Gracias por su Compra!");
+  }
 
+      
