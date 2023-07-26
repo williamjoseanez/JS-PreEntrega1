@@ -170,9 +170,9 @@ alert (`En esta sección simularemos una tienda de compras, donde tu calcularía
 alert (`ha entrado un producto único en su estilo, el Valor del producto es de $500 Ars ¿Está interesado?, de ser asi en la proxima ventana elija la cantidad de productos que desea agregar al carrito`);
         
         
-        let cantidadArticulo = parseInt(prompt(`¿Cuántos artículos deseas agregar`));{
+        let cantidadArticulo = parseInt(prompt(`¿Cuántos artículos deseas agregar ✍🏻`));{
                   if (cantidadArticulo >= 1 && cantidadArticulo < 13);
-                  alert(`Ha agregado correctamente  ` + cantidadArticulo + ` artículos al carrito `);
+                  alert(`Ha agregado correctamente  ` + cantidadArticulo + ` artículos al carrito 🛒 `);
                   } 
 
         const suma = (a, b) => a + b;
@@ -196,8 +196,8 @@ alert (`ha entrado un producto único en su estilo, el Valor del producto es de 
     
     
     function pedirDonacion(){
-      let donacion = prompt(`Ingrese por favor el porcentaje:
-      5,10,15 o el monto que usted considere`);
+      let donacion = prompt(`Ingrese por favor un porcentaje 💱,
+      ejemplo: 5, 10, 15 o el porcentaje que usted considere`);
                                 
               while (isNaN(donacion) || donacion.trim() === "" ) {
                     donacion = prompt("❌ Debe Ingresar un porcentaje Valido");
@@ -213,7 +213,7 @@ alert (`ha entrado un producto único en su estilo, el Valor del producto es de 
                       }
                   }
          
-        alert("✅ Gracias! ha decidido donar el " + Math.round(porcentaje) + "% del monto de su factura a una buena causa");
+        alert("✅ Gracias! ha decidido donar el " + Math.round(porcentaje) + "%  💵 del monto de su factura a una buena causa");
       
 
 
@@ -223,7 +223,7 @@ alert (`ha entrado un producto único en su estilo, el Valor del producto es de 
 
        
   let montofinal = suma(totalApagar,montoConPorcentaje);{
-      alert("Estamos a un paso de de finalizar la compra, el monto total a pagar es : $" + Math.round(montofinal) + " Gracias por su Compra!");
+      alert("Estamos a un paso de de finalizar la compra 💰, el monto total a pagar es :$" + Math.round(montofinal) + " Gracias por su Compra!");
   }
 
       
