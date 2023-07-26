@@ -197,14 +197,14 @@ alert( `👏Excelente👏, llegaste al final 🥇🥇🥇
 
     
     
-//     function pedirDonacion(){
-//       let donacion = prompt(`ingrese por favor el porcentaje a donar, el mismo se calcula en base a su total a pagar en la tienda`);
+    function pedirDonacion(){
+      let donacion = prompt(`ingrese por favor el porcentaje a donar, el mismo se calcula en base a su total a pagar en la tienda`);
                                 
-//               while (isNaN(donacion) || donacion.trim() === "" ) {
-//                     donación = prompt("❌ Debe Ingresar un porcentaje Valido");
-//                     }
-//                     return parseFloat(donacion);
-//                   };
+              while (isNaN(donacion) || donacion.trim() === "" ) {
+                    donación = prompt("❌ Debe Ingresar un porcentaje Valido");
+                    }
+                    return parseFloat(donacion);
+                  };
                     
 //        let porcentaje = pedirDonacion();
                     
