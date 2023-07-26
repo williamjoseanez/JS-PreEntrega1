@@ -135,7 +135,8 @@ const numeroIngresado = parseInt(prompt("Ingresa un número para verificar 📝:
         if (esPrimo(numeroIngresado)) {
           alert(numeroIngresado + " Es un número PRIMO.");
         } else {
-          alert(numeroIngresado + "  ❌ No es un número PRIMO ❌.");
+          alert(numeroIngresado + `     ❌ No es un número PRIMO ❌.
+      Un número primo sólo es divisible por sí mismo y por 1, los números negativos, 0 y 1 NO son números primos`);
         };
 
 alert( ` Excelente 👏👏, has llegado muy lejos.
@@ -216,7 +217,7 @@ alert (`Vendemos un producto 🍔 , el Valor del producto es de $500 + iva, en l
 
        
   let montoFinal = suma(totalApagar,montoConPorcentaje);{
-      alert("Estamos a un paso de finalizar esta compra 💰, el monto total a pagar es :$" + Math.round(montoFinal) + " Gracias por su Compra!");
+      alert("Estamos a un paso de finalizar esta compra 💰, el monto total a pagar es : $" + Math.round(montoFinal) + " Gracias por su Compra!");
   };
 
   alert( `👏Excelente👏, llegaste al final 🥇🥇🥇
