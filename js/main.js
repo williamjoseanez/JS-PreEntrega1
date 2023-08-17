@@ -258,11 +258,11 @@ const productos = [
      
     ];
     
-    let nombre = prompt("Ingrese el nombre del producto a consultar");
+    let articulo = prompt("Ingrese el nombre del producto a consultar");
     let producto;
     
     for (const item of productos) {
-      if (item.nombre === nombre) {
+      if (item.articulo === articulo) {
         producto = item;
       }
     }
