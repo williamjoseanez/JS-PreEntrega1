@@ -250,19 +250,19 @@ alert (`Vendemos un producto 🍔 , el Valor del producto es de $500 + iva, en l
                   * medias `);
 
 const productos = [
-      { id: 1, nombre: "camisa", precio: 1000 },
-      { id: 2, nombre: "pantalon", precio: 700 },
-      { id: 3, nombre: "gorra", precio: 350 },
-      { id: 4, nombre: "zapato", precio: 2800 },
-      { id: 5, nombre: "medias", precio: 1730 },
+      { id: 1, nombreProducto: "camisa", precio: 1000 },
+      { id: 2, nombreProducto: "pantalon", precio: 700 },
+      { id: 3, nombreProducto: "gorra", precio: 350 },
+      { id: 4, nombreProducto: "zapato", precio: 2800 },
+      { id: 5, nombreProducto: "medias", precio: 1730 },
      
     ];
     
-    let articulo = prompt("Ingrese el nombre del producto a consultar");
+    let nombreProducto = prompt("Ingrese el nombre del producto a consultar");
     let producto;
     
     for (const item of productos) {
-      if (item.articulo === articulo) {
+      if (item.nombreProducto === nombreProducto) {
         producto = item;
       }
     }
@@ -270,7 +270,7 @@ const productos = [
     if (producto) {
       let mensaje = `
         ID: ${producto.id}
-        Nombre: ${producto.nombre}
+        Nombre: ${producto.nombreProducto}
         $${producto.precio}
       `;
     
@@ -280,3 +280,5 @@ const productos = [
     }
 
     alert( ` muy bien continuemos`);
+
+    
