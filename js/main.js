@@ -281,4 +281,27 @@ const productos = [
 
     alert( ` muy bien continuemos`);
 
+    let nombreVerificar = prompt("Ingrese el nombre del producto a verificar");
+
+if (nombreProducto.includes(nombreProducto)) {
+  alert("El nombre buscado se encuentra en la lista");
+} else {
+  alert("El nombre buscado no se encuentra en la lista");
+};
+alert( ` muy bien continuemos, te volvere a pedir tus datos`);
+
+function Persona(nombre, edad, profesion) {
+      this.nombre = prompt("ingresa un nombre");
+      this.edad = prompt("ingresa una edad");
+      this.profesion = prompt("ingresa una profesion");
+      this.saludar = function() {
+        alert(`Bienvenido, ${this.nombre} ahora sabemos que tienes ${this.edad} años, y eres ${this.profesion} `);
+      };
+    }
+    
+   
+    const persona1 = new Persona(prompt("ingresa un apellido"));
+    persona1.saludar();
+    
+   
     
