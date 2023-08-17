@@ -302,6 +302,26 @@ function Persona(nombre, edad, profesion) {
    
     const persona1 = new Persona(prompt("ingresa un apellido"));
     persona1.saludar();
+
+alert (`Muy bien, ahora con el método Map tendremos varios ejemplos`)
     
-   
+    const numeros = [
+    1, 2, 3, 4, 5
+    ];
+
+    const numerosDobles = numeros.map(numero => numero * 2 );
+    
+    numerosDobles.forEach(numeroDoble => {
+      alert(`Número doble: ${numeroDoble}`);
+    });
+
+    alert (`seguimos, con el método Map y otro ejemplo`)
+
+    const frutas = ["Manzana", "Banana", "Naranja", "Uva"];
+
+const frutasMayusculas = frutas.map(fruta => fruta.toUpperCase());
+
+frutasMayusculas.forEach(frutaMayuscula => {
+  alert(`Fruta en mayúsculas: ${frutaMayuscula}`);
+});
     
